@@ -1,4 +1,4 @@
-####Nginx基于$document_uri的访问控制
+#### Nginx基于$document_uri的访问控制
 ```
 这就用到了变量$document_uri，根据前面所学内容，该变量等价于$uri，其实也等价于location匹配。
 ```

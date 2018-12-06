@@ -1,4 +1,4 @@
-####rewrite规则
+#### rewrite规则
 
     格式：rewrite  regex replacement [flag] 
     

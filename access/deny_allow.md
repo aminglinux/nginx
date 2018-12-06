@@ -1,4 +1,4 @@
-####Nginx访问控制 —— deny_allow
+#### Nginx访问控制 —— deny_allow
 ```
 Nginx的deny和allow指令是由ngx_http_access_module模块提供，Nginx安装默认内置了该模块。
 除非在安装时有指定 --without-http_access_module。

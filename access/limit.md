@@ -1,4 +1,4 @@
-####Nginx的限速
+#### Nginx的限速
 ```
 可以通过ngx_http_limit_conn_module和ngx_http_limit_req_module模块来实现限速的功能。
 ```

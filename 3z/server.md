@@ -2,7 +2,7 @@
 
     server{} 包含在http{}内部，每一个server{}都是一个虚拟主机（站点）。
 
-####以下为nginx.conf配置文件中server{}部分的内容。
+#### 以下为nginx.conf配置文件中server{}部分的内容。
 
         server {
         listen       80;  //监听端口为80，可以自定义其他端口，也可以加上IP地址，如，listen 127.0.0.1:8080;

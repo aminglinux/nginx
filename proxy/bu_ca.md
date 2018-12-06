@@ -1,4 +1,4 @@
-####nginx的proxy_buffering和proxy_cache
+#### nginx的proxy_buffering和proxy_cache
 ```
 两个都是nginx代理中内存设置相关的参数。
 ```

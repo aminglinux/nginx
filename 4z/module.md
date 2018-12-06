@@ -4,7 +4,7 @@
 
 ![image](https://coding.net/u/aminglinux/p/nginx/git/raw/master/4z/nginx_module.jpg)
 
-####核心模块
+####     核心模块
     
     核心模块是指Nginx服务器正常运行时必不可少的模块，它们提供了Nginx最基本最核心的服务，如进程管理、权限控制、错误日志记录等。
     主要包含对两类功能的支持，一类是主体功能，包括进程管理、权限控制、错误日志记录、配置解析等，
@@ -19,7 +19,7 @@
     ngx_epoll_module
     
     
-####标准HTTP模块
+####     标准HTTP模块
 
     标准HTTP模块是编译Nginx后包含的模块，其支持Nginx服务器的标准HTTP功能。
     
@@ -49,7 +49,7 @@
 |ngx_http_upstream_module|定义一组服务器，可以接收来自代理、Fastcgi、Memcached的中重定向，主要用于负载均衡|
 
     
-####可选HTTP模块
+####     可选HTTP模块
 
     可选HTTP模块主要用于扩展标准的HTTP功能，使其能够处理一些特殊的HTTP请求。在编译Nginx时，如果不指定这些模块，默认是不会安装的。
 
@@ -71,11 +71,11 @@
 |ngx_http_xslt_module|将XML响应信息使用XSLT（拓展样式表转换语言）进行转换|
 
     
-####邮件服务模块
+####     邮件服务模块
 
     主要用于支持Ningx的邮件服务。
     
-####第三方模块
+####     第三方模块
 
     并非有Nginx官方提供，而是由第三方机构或者个人开发的模块，用于实现某种特殊功能。
     echo-nginx-module 支持在Nginx配置文件中使用echo、sleep、time以及exec等类shell命令

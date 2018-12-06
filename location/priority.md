@@ -1,4 +1,4 @@
-#### nginx location优先级
+####  nginx location优先级
 
     =  高于  ^~  高于  ~* 等于 ~  高于  /
     

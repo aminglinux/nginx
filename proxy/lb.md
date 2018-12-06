@@ -1,4 +1,4 @@
-####Nginx的负载均衡配置
+#### Nginx的负载均衡配置
 ```
 Nginx通过upstream和proxy_pass实现了负载均衡。本质上也是Nginx的反向代理功能，只不过后端的server为多个。
 ```

@@ -1,21 +1,21 @@
 ### events配置部分
 
-####worker_connections  1024;
+####    worker_connections  1024;
 
     定义每个work_process同时开启的最大连接数，即允许最多只能有这么多连接。
     
-####accept_mutex on;
+####    accept_mutex on;
 
     当某一个时刻只有一个网络连接请求服务器时，服务器上有多个睡眠的进程会被同时叫醒，这样会损耗一定的服务器性能。
     Nginx中的accept_mutex设置为on，将会对多个Nginx进程（worker processer）接收连接时进行序列化，防止多个进程争抢资源。
     默认就是on。
     
-####multi_accept on;
+####    multi_accept on;
 
     nginx worker processer可以做到同时接收多个新到达的网络连接，前提是把该参数设置为on。
     默认为off，即每个worker process一次只能接收一个新到达的网络连接。
     
-####use epoll;
+####    use epoll;
 
     Nginx服务器提供了多个事件驱动器模型来处理网络消息。
     其支持的类型有：select、poll、kqueue、epoll、rtsing、/dev/poll以及eventport。

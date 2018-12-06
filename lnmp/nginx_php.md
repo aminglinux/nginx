@@ -1,4 +1,4 @@
-####配置Nginx和php
+#### 配置Nginx和php
 ```
 配置如下（在server部分添加）：
     location ~ \.php$ {

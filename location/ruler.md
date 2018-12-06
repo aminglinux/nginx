@@ -1,4 +1,4 @@
-####nginx的location配置
+#### nginx的location配置
 
     nginx location语法规则：location [=|~|~*|^~] /uri/ { … }
     nginx的location匹配的变量是$uri

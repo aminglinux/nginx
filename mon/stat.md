@@ -1,4 +1,4 @@
-####配置Nginx状态
+#### 配置Nginx状态
 ```
 Nginx有内置一个状态页，需要在编译的时候指定参数--with-http_stub_status_module参数方可打开。
 也就是说，该功能是由http_stub_status_module模块提供，默认没有加载。

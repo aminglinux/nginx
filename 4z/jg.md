@@ -1,4 +1,4 @@
-####Nginx架构
+#### Nginx架构
 
     Nginx服务器使用 master/worker 多进程模式。
     主进程(Master process)启动后，会接收和处理外部信号；

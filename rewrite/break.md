@@ -1,4 +1,4 @@
-####rewrite中的break和last
+#### rewrite中的break和last
 
     两个指令用法相同，但含义不同，需要放到rewrite规则的末尾，用来控制重写后的链接是否继续被nginx配置执行(主要是rewrite、return指令)。
     

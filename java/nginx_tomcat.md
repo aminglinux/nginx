@@ -1,4 +1,4 @@
-####Nginx+Tomcat架构
+#### Nginx+Tomcat架构
 ```
 配置文件示例
 server

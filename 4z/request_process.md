@@ -1,7 +1,7 @@
-####Nginx请求流程
+####   Nginx请求流程
 ![image](https://coding.net/u/aminglinux/p/nginx/git/raw/master/4z/nginx_phase.png)
 
-####Nginx各phase对应的模块
+####   Nginx各phase对应的模块
 | phase      | 对应模块    |
 | :--------   | :-----   | 
 | NGX_HTTP_POST_READ_PHASE       | ngx_http_realip_module      |
@@ -16,7 +16,7 @@
 |NGX_HTTP_CONTENT_PHASE|ngx_http_autoindex_module、ngx_http_core_module、ngx_http_index_module、ngx_http_proxy_module、ngx_http_stub_status_module等|
 |NGX_HTTP_LOG_PHASE|ngx_http_log_module|
 
-####各phase说明
+####   各phase说明
 #####            #NGX_HTTP_POST_READ_PHASE
 ```
 nginx读取并解析完请求头之后就进入了post_read 阶段，它位于uri被重写之前，这个阶段允许nginx改变请求头中ip地址的值
