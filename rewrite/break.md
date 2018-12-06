@@ -15,7 +15,7 @@
     当我们请求1.html时，最终访问到的是3.html，两条rewrite规则先后执行。
     
     
-#####break和last在location {}外部
+#####   break和last在location {}外部
 
     格式：rewrite xxxxx  break;
     
@@ -49,7 +49,7 @@
     
     以上2个示例中，可以把break替换为last，它们两者起到的效果一模一样。
     
-#####当break和last在location{}里面
+#####   当break和last在location{}里面
     
     示例4（什么都不加）：
     server{
@@ -118,7 +118,7 @@
     在location{}内部，遇到last，本location{}内后续指令不再执行，而重写后的url再次从头开始，从头到尾匹配一遍规则。
     
 
-#####结论
+#####   结论
 
 * 当rewrite规则在location{}外，break和last作用一样，遇到break或last后，其后续的rewrite/return语句不再执行。但后续有location{}的话，还会近一步执行location{}里面的语句,当然前提是请求必须要匹配该location。
 * 当rewrite规则在location{}里，遇到break后，本location{}与其他location{}的所有rewrite/return规则都不再执行。

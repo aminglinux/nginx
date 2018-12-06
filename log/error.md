@@ -5,7 +5,7 @@ Nginx错误日志平时不用太关注，但是一旦出了问题，就需要借
 配置参数格式：error_log /path/to/log level;
 ```
 
-#####Nginx错误日志级别
+#####  Nginx错误日志级别
 ```
 常见的错误日志级别有debug | info | notice | warn | error | crit | alert | emerg
 级别越高记录的信息越少，如果不定义，默认级别为error.
@@ -16,7 +16,7 @@ Nginx错误日志平时不用太关注，但是一旦出了问题，就需要借
 但是，在不同的配置段中出现是没问题的。
 ```
 
-#####Nginx错误日志示例
+#####  Nginx错误日志示例
 ```
 error_log  /var/log/nginx/error.log crit;
 

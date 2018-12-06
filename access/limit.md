@@ -3,11 +3,11 @@
 可以通过ngx_http_limit_conn_module和ngx_http_limit_req_module模块来实现限速的功能。
 ```
 
-#####ngx_http_limit_conn_module
+#####        ngx_http_limit_conn_module
 ```
 该模块主要限制下载速度。
 ```
-######1. 并发限制
+#####        #1. 并发限制
 ```
 配置示例
 http
@@ -27,7 +27,7 @@ http
 
 limit_conn 定义针对aming这个zone，并发连接为10个。在这需要注意一下，这个10指的是单个IP的并发最多为10个。
 ```
-######2. 速度限制
+#####        #2. 速度限制
 ```
 location ~ /download/ {
     ...
@@ -41,12 +41,12 @@ limit_rate 定义下载速度为150k/s。
 注意：这两个参数针对每个请求限速。
 ```
 
-#####ngx_http_limit_req_module
+#####        ngx_http_limit_req_module
 
 ```
 该模块主要用来限制请求数。
 ```
-######1. limit_req_zone
+#####        #1. limit_req_zone
 ```
 语法: limit_req_zone $variable zone=name:size rate=rate;
 默认值: none
@@ -63,7 +63,7 @@ limit_rate 定义下载速度为150k/s。
 所以如果你需要指定每秒处理少于1个的请求，2秒处理一个请求，可以使用 “30r/m”。
 
 ```
-######2. limit_req
+#####        #2. limit_req
 ```
 语法: limit_req zone=name [burst=number] [nodelay];
 默认值: —
@@ -89,7 +89,7 @@ server {
 limit_req zone=aming burst=5 nodelay;
 ```
 
-#####示例
+#####        示例
 
 ```
 http {
@@ -103,7 +103,7 @@ http {
 }
 ```
 
-#####设定白名单IP
+#####        设定白名单IP
 ```
 如果是针对公司内部IP或者lo（127.0.0.1）不进行限速，如何做呢？这就要用到geo模块了。
 

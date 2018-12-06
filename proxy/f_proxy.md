@@ -21,8 +21,8 @@ server
     }
 }
 ```
-#####配置说明
-######1. proxy_pass
+#####    配置说明
+#####    #1. proxy_pass
 
     在正向代理中，已经使用过该指令。
     格式很简单： proxy_pass  URL;
@@ -75,7 +75,7 @@ server
     示例5：http://192.168.1.10/linuxa.html
     
 
-######2. proxy_set_header
+#####    #2. proxy_set_header
 ```
 proxy_set_header用来设定被代理服务器接收到的header信息。
 
@@ -121,7 +121,7 @@ server {
 }
 
 ```
-######3. proxy_redirect
+#####    #3. proxy_redirect
 ```
 该指令用来修改被代理服务器返回的响应头中的Location头域和“refresh”头域。
 语法结构为：

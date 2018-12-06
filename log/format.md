@@ -3,7 +3,7 @@
 Nginx访问日志可以设置自定义的格式，来满足特定的需求。
 ```
 
-#####访问日志格式示例
+#####  访问日志格式示例
 ```
 示例1
     log_format combined_realip '$remote_addr $http_x_forwarded_for [$time_local]'
@@ -21,7 +21,7 @@ Nginx访问日志可以设置自定义的格式，来满足特定的需求。
     '"$http_user_agent";
 
 ```
-#####常见变量
+#####  常见变量
 | 变量       | 说明    |
 | :--------   | :-----   | 
 |$time_local|  通用日志格式下的本地时间；（服务器时间）|

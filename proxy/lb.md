@@ -3,7 +3,7 @@
 Nginx通过upstream和proxy_pass实现了负载均衡。本质上也是Nginx的反向代理功能，只不过后端的server为多个。
 ```
 
-#####案例一（简单的轮询）
+#####     案例一（简单的轮询）
 ```
 upstream www {
     server 172.37.150.109:80;
@@ -28,7 +28,7 @@ server {
 
 ```
 
-#####案例二（带权重轮询+ip_hash算法）
+#####     案例二（带权重轮询+ip_hash算法）
 ```
 upstream www {
     server 172.37.150.109:80 weight=50;
@@ -54,7 +54,7 @@ ip_hash为nginx负载均衡算法，原理很简单，它根据请求所属的�
 
 ```
 
-#####案例三（upstream其他配置）
+#####     案例三（upstream其他配置）
 ```
 upstream www {
         server 172.37.150.109:80 weight=50 max_fails=3 fail_timeout=30s;
@@ -96,7 +96,7 @@ off        # 停止将请求发送给下一台后端服务器
 
 ```
 
-#####案例四（根据不同的uri）
+#####     案例四（根据不同的uri）
 ```
     upstream aa.com {         
                       server 192.168.0.121;
@@ -135,7 +135,7 @@ off        # 停止将请求发送给下一台后端服务器
 说明：请求aa.php的，会到aa.com组，请求bb.php的会到bb.com，其他请求全部到bb.com。
 
 ```
-#####案例五（根据不同的目录）
+#####     案例五（根据不同的目录）
 ```
 upstream aaa.com
 {

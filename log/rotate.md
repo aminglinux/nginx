@@ -5,7 +5,7 @@
 
 实现日志切割可以通过写shell脚本或者系统的日志切割机制实现。
 ```
-#####shell脚本切割Nginx日志
+#####  shell脚本切割Nginx日志
 ```
 切割脚本内容：
 #!/bin/bash
@@ -21,7 +21,7 @@ bzip2 *$prefix  //压缩日志
 find . -type f -mtime +180 |xargs /bin/rm -f  //删除超过180天的老日志
 
 ```
-#####系统日志切割机制
+#####  系统日志切割机制
 ```
 在/etc/logrotate.d/下创建nginx文件，内容为：
 /data/logs/*log {

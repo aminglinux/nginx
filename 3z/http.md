@@ -1,12 +1,12 @@
 ###http配置部分
 
-#####官方文档 http://nginx.org/en/docs/
+#####    官方文档 http://nginx.org/en/docs/
 
-#####参考链接： https://segmentfault.com/a/1190000012672431
+#####    参考链接： https://segmentfault.com/a/1190000012672431
 
-#####参考链接： https://segmentfault.com/a/1190000002797601
+#####    参考链接： https://segmentfault.com/a/1190000002797601
 
-#####参考链接：http的header https://kb.cnblogs.com/page/92320/
+#####    参考链接：http的header https://kb.cnblogs.com/page/92320/
 
 
 ####MIME-Type

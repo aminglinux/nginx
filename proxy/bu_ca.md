@@ -3,7 +3,7 @@
 两个都是nginx代理中内存设置相关的参数。
 ```
 
-#####proxy_buffering设置
+#####      proxy_buffering设置
 ```
 proxy_buffering主要是实现被代理服务器的数据和客户端的请求异步。
 为了方便理解，我们定义三个角色，A为客户端，B为代理服务器，C为被代理服务器。
@@ -15,7 +15,7 @@ proxy_buffering主要是实现被代理服务器的数据和客户端的请求�
 相反，如果proxy_buffering关闭，C反馈的数据实时地通过B传输给A。
 ```
 
-######以下配置，都是针对每一个http请求的。
+#####      #以下配置，都是针对每一个http请求的。
 ```
 1. proxy_buffering  on;
 该参数设置是否开启proxy的buffer功能，参数的值为on或者off。
@@ -53,7 +53,7 @@ proxy_busy_buffer_size参数用来设置处于busy状态的buffer有多大。
 设置同时写入临时文件的数据量的总大小。通常设置为8k或者16k。
 
 ```
-#####proxy_buffer示例
+#####      proxy_buffer示例
 ```
 server
 {
@@ -79,7 +79,7 @@ server
 }
 ```
 
-#####proxy_cache设置
+#####      proxy_cache设置
 ```
 proxy_cache将从C上获取到的数据根据预设规则存放到B上（内存+磁盘）留着备用，
 A请求B时，B会把缓存的这些数据直接给A，而不需要再去向C去获取。
@@ -87,7 +87,7 @@ A请求B时，B会把缓存的这些数据直接给A，而不需要再去向C去
 proxy_cache相关功能生效的前提是，需要设置proxy_buffering on;
 
 ```
-######proxy_cache主要参数
+#####      #proxy_cache主要参数
 ```
 1. proxy_cache
 语法：proxy_cache zone|off
@@ -139,7 +139,7 @@ max_size设置硬盘中最多可以缓存多少数据，当到达该数值时，
 例：proxy_cache_path /data/nginx_cache/ levels=1:2 keys_zone=my_zone:10m inactive=300s max_size=5g
 
 ```
-#####proxy_cache示例
+#####      proxy_cache示例
 ```
 http 
 {

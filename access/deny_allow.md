@@ -4,7 +4,7 @@ Nginx的deny和allow指令是由ngx_http_access_module模块提供，Nginx安装
 除非在安装时有指定 --without-http_access_module。
 ```
 
-#####语法
+#####  语法
 ```
 语法：allow/deny address | CIDR | unix: | all
 
@@ -15,7 +15,7 @@ Nginx的deny和allow指令是由ngx_http_access_module模块提供，Nginx安装
 
 ```
 
-#####示例
+#####  示例
 ```
 示例1：
 location /

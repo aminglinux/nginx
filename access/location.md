@@ -4,7 +4,7 @@
 这就用到了location配置。
 ```
 
-#####示例1
+#####   示例1
 ```
 location /aming/
 {
@@ -14,7 +14,7 @@ location /aming/
 说明：针对/aming/目录，全部禁止访问，这里的deny all可以改为return 403.
 ```
 
-#####示例2
+#####   示例2
 ```
 location ~ ".bak|\.ht"
 {
@@ -27,7 +27,7 @@ location ~ ".bak|\.ht"
 2. www.aminglinux.com/aming/123/.htalskdjf
 ```
 
-#####示例3
+#####   示例3
 ```
 location ~ (data|cache|tmp|image|attachment).*\.php$
 {

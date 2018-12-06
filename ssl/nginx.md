@@ -1,5 +1,5 @@
 ####Nginx配置SSL
-#####Nginx配置示例（单向）
+#####    Nginx配置示例（单向）
 ```
 cp /etc/pki/ca_test/server/server.* /usr/local/nginx/conf/
 {
@@ -16,7 +16,7 @@ cp /etc/pki/ca_test/server/server.* /usr/local/nginx/conf/
     ...
 }
 ```
-#####配置说明
+#####    配置说明
 ```
 1. 443端口为ssl监听端口。
 2. ssl on表示打开ssl支持。
@@ -26,7 +26,7 @@ cp /etc/pki/ca_test/server/server.* /usr/local/nginx/conf/
 6. ssl_ciphers配置ssl加密算法，多个算法用:分隔，ALL表示全部算法，!表示不启用该算法，+表示将该算法排到最后面去。
 7. ssl_prefer_server_ciphers 如果不指定默认为off，当为on时，在使用SSLv3和TLS协议时，服务器加密算法将优于客户端加密算法。
 ```
-#####Nginx配置双向认证
+#####    Nginx配置双向认证
 ```
 cp /etc/pki/ca_test/root/ca.crt /usr/local/nginx/conf/
 配置示例：
@@ -48,7 +48,7 @@ cp /etc/pki/ca_test/root/ca.crt /usr/local/nginx/conf/
 
 ```
 
-#####客户端（浏览器）操作
+#####    客户端（浏览器）操作
 ```
 如果不进行以下操作，浏览器会出现400错误。400 Bad Request（No required SSL certificate was sent）
 首先需要将client.key转换为pfx(p12)格式

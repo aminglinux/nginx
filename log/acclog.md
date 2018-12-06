@@ -8,7 +8,7 @@ web服务器的访问日志是非常重要的，我们可以通过访问日志�
 access_log可以配置到http, server, location配置段中。
 
 ```
-#####配置示例
+##### 配置示例
 ```
 server 
 {

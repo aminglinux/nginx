@@ -7,7 +7,7 @@
 
 ![image](https://coding.net/u/aminglinux/p/nginx/git/raw/master/4z/nginx_jg.png)
 
-#####主进程
+#####  主进程
 
     主要功能是和外界通信和对内部其他进程进行管理，具体来说有以下几点：
     
@@ -21,7 +21,7 @@
     
     * 日志文件管理
     
-#####子进程（worker process)
+#####  子进程（worker process)
 
     是由主进程生成，生成数量可以在配置文件中定义。该进程主要工作有：
     

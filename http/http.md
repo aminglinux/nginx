@@ -2,7 +2,7 @@
 HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写，是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。 
 HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet）传输，主要规定了客户端和服务器之间的通信格式，默认使用80端口。
 
-#####请求方法
+#####      请求方法
 这个方法指的是，客户端向服务端发起请求时的动作。
 常见方法如下：
 
@@ -17,7 +17,7 @@ HTTP 是基于 TCP/IP 协议的应用层协议。它不涉及数据包（packet�
 |TRACE|回显服务器收到的请求，主要用于测试或诊断|
 |CONNECT|把请求连接转换到透明的TCP/IP通道|
 
-#####HTTP状态码
+#####      HTTP状态码
 客户端发送请求到服务端，然后服务端会回应结果给客户端，回应的数据会包含一个三位数字的状态码，用来标识该请求是否成功，比如是正常还是错误等。
 HTTP/1.1中状态码可以分为五大类。
 | 状态码      | 说明    |
@@ -45,7 +45,7 @@ HTTP/1.1中状态码可以分为五大类。
 |503|Service Unavailable|服务当前不可用，由于超载或系统维护，服务器暂时的无法处理客户端的请求，如，当nginx限速后，客户端请求超过限制就会收到该状态码|
 |504|Gateway Time-out|和502类似，充当代理角色时，后端的服务期没有按时返回数据，超时了|
 
-#####HTTP Request
+#####      HTTP Request
 从客户端发往服务端的HTTP报文叫做HTTP Request Message。
 HTTP请求报文由请求行、请求头部（header)、空行、请求数据几个部分组成，
 如下所示：
@@ -67,7 +67,7 @@ Accept-Language zh-CN,zh;q=0.8  请求头部
 请求数据
 ```
 
-#####HTTP Response
+#####      HTTP Response
 从服务端回应的HTTP报文叫做HTTP Response Message。
 HTTP响应也由四个部分组成，分别是：状态行、消息报头、空行和响应正文。
 示例：
@@ -82,7 +82,7 @@ X-Powered-By: PHP/5.6.10   消息报头
 响应正文
 ```
 
-#####HTTP工作原理
+#####      HTTP工作原理
 * 客户端连接到Web服务器，一个HTTP客户端，通常是浏览器，与Web服务器的HTTP端口（默认为80）建立一个TCP套接字连接。
 
 * 通过TCP套接字，客户端向Web服务器发送一个文本的请求报文。
@@ -107,7 +107,7 @@ X-Powered-By: PHP/5.6.10   消息报头
 
 * 浏览器将该 html 文本并显示内容;
 
-#####URI和URL
+#####      URI和URL
 URI，是uniform resource identifier，统一资源标识符，用来唯一的标识一个资源。
 Web上可用的每种资源如HTML文档、图像、视频片段、程序等都是用一个URI来定位的。
 URI一般由三部组成：

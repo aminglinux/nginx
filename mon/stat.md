@@ -4,7 +4,7 @@ Nginx有内置一个状态页，需要在编译的时候指定参数--with-http_
 也就是说，该功能是由http_stub_status_module模块提供，默认没有加载。
 ```
 
-#####Nginx配置文件示例
+#####   Nginx配置文件示例
 ```
 server{
 	listen 80;
@@ -21,13 +21,13 @@ server{
 
 ```
 
-#####配置说明
+#####   配置说明
 * location /status/这样当访问/status/时即可访问到状态页内容。
 * stub_status on即打开了状态页。
 * access_log off不记录日志
 * allow和deny只允许指定IP和IP段访问，因为这个页面需要保护起来，并不公开，当然也可以做用户认证。
 
-#####测试和结果说明
+#####   测试和结果说明
 ```
 测试命令：curl -x127.0.0.1:80 www.aminglinux.com/status/
 

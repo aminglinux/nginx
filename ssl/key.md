@@ -1,4 +1,4 @@
-#####生成CA根证书
+#####   生成CA根证书
 ```
 # mkdir /etc/pki/ca_test //创建CA更证书的目录
 
@@ -31,7 +31,7 @@ private_key	= $dir/private/cakey.pe 改为  private_key	= $dir/root/ca.key
 //生成crt文件
 ```
 
-#####生成server端证书
+#####   生成server端证书
 ```
 # cd /etc/pki/ca_test/server
 
@@ -46,7 +46,7 @@ Sign the certificate? [y/n]:y
 
 ```
 
-#####生成客户端证书
+#####   生成客户端证书
 ```
 如果做ssl的双向认证，还需要给客户端生成一个证书，步骤和上面的基本一致
 # cd /etc/pki/ca_test/client
