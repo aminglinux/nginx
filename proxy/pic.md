@@ -1,5 +1,5 @@
 #####  正向代理
-![image](https://aminglinux.coding.net/p/nginx/d/nginx/git/raw/master/proxy/z_proxy.png)
+![image](https://github.com/aminglinux/nginx/blob/master/proxy/z_proxy.png)
 
 ![image](https://github.com/aminglinux/nginx/blob/master/proxy/zp2.png)
 
