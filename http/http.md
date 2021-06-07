@@ -50,7 +50,7 @@ HTTP/1.1中状态码可以分为五大类。
 HTTP请求报文由请求行、请求头部（header)、空行、请求数据几个部分组成，
 如下所示：
 
-![img](https://github.com/aminglinux/nginx/blob/master/http/http_request.jpg)
+![img](http://ask.apelearn.com/uploads/answer/20200523/http_request.jpg)
 
 使用curl命令可以获取Request头信息 curl -v
 
