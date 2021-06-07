@@ -32,7 +32,7 @@ find . -type f -mtime +180 |xargs /bin/rm -f  //删除超过180天的老日志
     compress
     sharedscripts
     postrotate
-        /bin/kill -USR1 $(cat /usr/local/nginx/logs/nginx.pid 2>/dev/null) 2>/dev/null || :
+        /bin/kill -USR1 $(cat /usr/local/nginx/logs/nginx.pid 2>/dev/null) 2>/dev/null 
     endscript
 }
 
