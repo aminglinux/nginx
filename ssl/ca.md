@@ -70,7 +70,7 @@ CA证书，顾名思义，就是CA颁发的证书。
 根证书的洋文叫“root certificate”，为了说清楚根证书是咋回事，再来看个稍微复杂点的例子。
 假设C证书信任A和B；然后A信任A1和A2；B信任B1和B2。则它们之间，构成如下的一个树形关系（一个倒立的树）。
 ```
-![img](https://coding.net/u/aminglinux/p/nginx/git/raw/master/ssl/ca_tree.png)
+![img](http://ask.apelearn.com/uploads/nginx/ca_tree.png)
 ```
 处于最顶上的树根位置的那个证书，就是“根证书”。除了根证书，其它证书都要依靠上一级的证书，来证明自己。
 那谁来证明“根证书”可靠呢？
