@@ -15,7 +15,7 @@
 目前，证书的格式和验证方法普遍遵循X.509国际标准。
 ```
 #####   #申请证书过程
-![image](https://coding.net/u/aminglinux/p/nginx/git/raw/master/ssl/ssl_ca.png)
+![image](http://ask.apelearn.com/uploads/nginx/ssl_ca.png)
 ```
 首先要有一个CA根证书，然后用CA根证书来签发用户证书。
 用户进行证书申请：
@@ -27,7 +27,7 @@
 ```
 
 #####   SSL工作流程（单向）
-![image](https://coding.net/u/aminglinux/p/nginx/git/raw/master/ssl/ssl_auth.jpg)
+![image](http://ask.apelearn.com/uploads/nginx/ssl_auth.jpg)
 ```
 1.客户端say hello 服务端
 2.服务端将证书、公钥等发给客户端
