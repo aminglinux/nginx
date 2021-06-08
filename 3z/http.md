@@ -14,7 +14,7 @@
     定义nginx能识别的网络资源媒体类型（如，文本、html、js、css、流媒体等）
     
     default_type  application/octet-stream;
-    定义默认的type，如果不定义改行，默认为text/plain.
+    定义默认的type，如果不定义该项，默认为text/plain.
     
 ####                log_format 
     log_format main  '$remote_addr - $remote_user [$time_local] "$request" '
