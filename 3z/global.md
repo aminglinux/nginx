@@ -1,4 +1,4 @@
-###nginx.conf全局配置
+### nginx.conf全局配置
 
 ####      user  nobody;
 
