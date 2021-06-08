@@ -1,4 +1,4 @@
-###nginx.conf server部分配置
+### nginx.conf server部分配置
 
     server{} 包含在http{}内部，每一个server{}都是一个虚拟主机（站点）。
 
