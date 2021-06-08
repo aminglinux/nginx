@@ -13,7 +13,7 @@
     
 ####  Nginx的事件驱动模型
 
-![image](https://ask.apelearn.com/uploads/nginx/nginx_event.png)
+![image](http://ask.apelearn.com/uploads/nginx/nginx_event.png)
     
     Nginx的事件驱动模型，支持select、poll、epoll、rtsig、kqueue、/dev/poll、eventport等。
     最常用的是前三种，其中kqueue模型用于支持BSD系列平台的事件驱动模型。kqueue是poll模型的一个变种，本质上和epoll一样。

@@ -1,5 +1,5 @@
 ####   Nginx请求流程
-![image](https://ask.apelearn.com/uploads/nginx/nginx_phase.png)
+![image](http://ask.apelearn.com/uploads/nginx/nginx_phase.png)
 
 ####   Nginx各phase对应的模块
 | phase      | 对应模块    |

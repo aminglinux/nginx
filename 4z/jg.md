@@ -5,7 +5,7 @@
     主进程启动后通过fork() 函数产生一个或多个子进程(work process)，每个子进程会进行进程初始化、
     模块调用以及对事件的接收和处理等工作。
 
-![image](https://ask.apelearn.com/uploads/nginx/nginx_jg.png)
+![image](http://ask.apelearn.com/uploads/nginx/nginx_jg.png)
 
 #####  主进程
 
@@ -39,4 +39,4 @@
     
     * 接收主进程指令，如重启、重载、退出等
     
-![img](https://ask.apelearn.com/uploads/nginx/nginx_m.jpg)
+![img](http://ask.apelearn.com/uploads/nginx/nginx_m.jpg)

@@ -1,4 +1,4 @@
-![img](https://ask.apelearn.com/uploads/nginx/event2.png)
+![img](http://ask.apelearn.com/uploads/nginx/event2.png)
 
 #####     同步机制
 
