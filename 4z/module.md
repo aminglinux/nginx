@@ -2,7 +2,7 @@
 
     Nginx涉及到的模块分为核心模块、标准HTTP模块、可选HTTP模块、邮件服务模块以及第三方模块等五大类。
 
-![image](https://coding.net/u/aminglinux/p/nginx/git/raw/master/4z/nginx_module.jpg)
+![image](https://ask.apelearn.com/uploads/nginx/nginx_module.jpg)
 
 ####     核心模块
     
