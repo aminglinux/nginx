@@ -1,4 +1,4 @@
-###http配置部分
+### http配置部分
 
 #####    官方文档 http://nginx.org/en/docs/
 
