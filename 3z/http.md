@@ -82,7 +82,7 @@
 
     gzip压缩比，1压缩比最小处理速度最快，9压缩比最大但处理速度最慢(传输快但比较消耗cpu)
     
-###gzip_types mime-type ... ;
+### gzip_types mime-type ... ;
 
     匹配mime类型进行压缩，无论是否指定,”text/html”类型总是会被压缩的。
     在conf/mime.conf里查看对应的type。
