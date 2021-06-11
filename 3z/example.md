@@ -1,3 +1,4 @@
+```
 user nobody; # 定义运行nginx服务的用户,还可以加上组,如 user nobody nobody
 
 worker_processes  8; #开启8个工作进程
@@ -146,4 +147,4 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; #同上
     }
 } 
-
+```
