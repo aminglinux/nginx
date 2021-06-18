@@ -126,3 +126,21 @@ $ curl https://github.com/ -v -x 127.0.0.1:3128
 ...                                                               
 
 ```
+
+#### linux机器上配置全局代理
+在 /etc/profile 文件中增加如下三项。  
+```
+export proxy="http://{proxy_server_ip}:3128"
+export http_proxy=$proxy
+export https_proxy=$proxy
+```
+
+使配置生效
+```
+source /etc/profile
+```
+
+对那些没有域名解析通过绑定hosts文件来访问的域名，不让其走http/https代理，需要额外增加环境变量：
+```
+export no_proxy='a.test.com,127.0.0.1,2.2.2.2'
+```
