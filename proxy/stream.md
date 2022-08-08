@@ -15,7 +15,7 @@ stream {
       }
       
       server {
-          listen 8028;                          #30028端口将以4层TCP协议方式转发至后端app_sever;
+          listen 8028;                          #8028端口将以4层TCP协议方式转发至后端app_sever;
           proxy_pass app_server;
       }
 
